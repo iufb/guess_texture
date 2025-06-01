@@ -1,0 +1,14 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/iufb/Projects/guess_texture/modules/color-analyzer/android/src/main/AndroidManifest.xml:1:1-2:12
+INJECTED from /home/iufb/Projects/guess_texture/modules/color-analyzer/android/src/main/AndroidManifest.xml:1:1-2:12
+	package
+		INJECTED from /home/iufb/Projects/guess_texture/modules/color-analyzer/android/src/main/AndroidManifest.xml
+uses-sdk
+INJECTED from /home/iufb/Projects/guess_texture/modules/color-analyzer/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/iufb/Projects/guess_texture/modules/color-analyzer/android/src/main/AndroidManifest.xml
+INJECTED from /home/iufb/Projects/guess_texture/modules/color-analyzer/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/iufb/Projects/guess_texture/modules/color-analyzer/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/iufb/Projects/guess_texture/modules/color-analyzer/android/src/main/AndroidManifest.xml

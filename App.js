@@ -1,20 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { NativeModules } from 'react-native';
+import { StyleSheet, UnistylesRuntime } from 'react-native-unistyles';
+import { PermissionView } from './components/Camera';
+const { ColorAnalyzer } = NativeModules
 export default function App() {
+    console.log(UnistylesRuntime.statusBar.height)
     return (
-        <View style={styles.container}>
-            <Text>Open up App.js to start working on your app! chanetgs, Hello from MainActivity</Text>
-            {/* <StatusBar style="auto" /> */}
-        </View>
+        <>
+            <PermissionView />
+            <StatusBar style="dark" />
+        </>
     );
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create((theme) => ({
     container: {
+        paddingTop: UnistylesRuntime.statusBar.height,
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: theme.colors.primary,
         alignItems: 'center',
         justifyContent: 'center',
     },
-});
+}));
