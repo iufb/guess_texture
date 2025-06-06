@@ -24,27 +24,7 @@ const saveImage = async (uri) => {
         return null
     }
 }
-export const PermissionView = () => {
 
-    const { hasPermission, requestPermission } = useCameraPermission()
-    useEffect(() => {
-        if (!hasPermission) {
-            requestPermission()
-
-        }
-    }, [hasPermission])
-
-    if (hasPermission) return <Camera />
-    return <View style={[styles.container]} >
-        <Text style={[styles.noPermissionMessage]} >No permission added</Text>
-        <Pressable onPress={requestPermission} hitSlop={10}>
-            <Text>
-                Ask Again
-            </Text>
-        </Pressable>
-    </View>
-
-}
 const Camera = () => {
     const device = useCameraDevice('back')
 

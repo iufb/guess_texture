@@ -2,23 +2,20 @@ import { StyleSheet } from 'react-native-unistyles'
 
 const lightTheme = {
     colors: {
-        primary: '#ff1ff4',
-        secondary: '#1ff4ff'
+        primary: '#10B981',
+        secondary: '#FFFFFF',
+        card: "#CCFBF1",
+        textLight: "#8B8C92",
+        textDark: "#000000",
+        dark: "#242424"
     },
     gap: (v) => v * 8
 }
 
-const otherTheme = {
-    colors: {
-        primary: '#aa12ff',
-        secondary: 'pink'
-    },
-    gap: (v) => v * 8
-}
+
 
 const appThemes = {
     light: lightTheme,
-    other: otherTheme
 }
 
 const breakpoints = {
